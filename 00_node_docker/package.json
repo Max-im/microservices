@@ -1,0 +1,18 @@
+{
+  "name": "01_node_docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pack": "docker build -t mpozhydaiev/node .",
+    "dev": "docker run -p 3000:8080 mpozhydaiev/node",
+    "attach": "docker exec -it <id> sh",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
